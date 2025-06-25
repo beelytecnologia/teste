@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Pretax</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        nav {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 
+                color 0.2s,
+                background 0.3s,
+                box-shadow 0.3s,
+                transform 0.2s;
+            padding: 0.5rem 1.2rem;
+            border-radius: 1.2rem;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #2a5298;
+            background: #fff;
+            box-shadow: 0 2px 12px #2a5298a0;
+            transform: scale(1.08) translateY(-2px);
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #aad1db;
+            transition: width 0.3s;
+            border-radius: 2px;
+            margin-top: 3px;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        .sobre-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(30,60,114,0.12);
+            padding: 2.5rem 2.5rem;
+        }
+        .sobre-container h2 {
+            color: #2a5298;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+        .sobre-container p {
+            color: #444;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .sobre-equipe {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+        }
+        .membro {
+            background: linear-gradient(40deg, #e0e7ef 60%, #aad1db 100%);
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px #2a529820;
+            padding: 1.5rem 1.2rem;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .membro:hover {
+            transform: scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 32px #2a5298a0;
+            background: linear-gradient(120deg, #aad1db 60%, #e0e7ef 100%);
+        }
+        .membro h4 {
+            margin: 0.5rem 0 0.7rem 0;
+            color: #2a5298;
+        }
+        .membro p {
+            color: #333;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Pretax</div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="sobre-container">
+        <h2>Sobre a Pretax</h2>
+        <p>
+            A Pretax nasceu com o propósito de transformar a gestão fiscal e tributária das empresas brasileiras. 
+            Com uma equipe multidisciplinar e apaixonada por inovação, oferecemos soluções inteligentes, consultoria personalizada e ferramentas modernas para impulsionar o crescimento sustentável dos nossos clientes.
+        </p>
+        <p>
+            Nosso compromisso é entregar excelência, confiança e resultados reais, sempre atentos às mudanças do mercado e da legislação. 
+            Acreditamos que o sucesso dos nossos clientes é o nosso maior patrimônio.
+        </p>
+        <div class="sobre-equipe">
+            <div class="membro">
+                <h4>João Silva</h4>
+                <p>CEO &amp; Fundador</p>
+            </div>
+            <div class="membro">
+                <h4>Maria Oliveira</h4>
+                <p>Especialista Tributária</p>
+            </div>
+            <div class="membro">
+                <h4>Carlos Souza</h4>
+                <p>Consultor de Negócios</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        nav {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #aad1db;
+        }
+        .cards-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(30,60,114,0.12);
+            padding: 2rem 1.5rem;
+            width: 260px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(30,60,114,0.18);
+        }
+        .card h3 {
+            margin: 0 0 1rem 0;
+            color: #2a5298;
+        }
+        .card p {
+            color: #444;
+            font-size: 1rem;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .main-btn {
+            background: #2a5298;
+            color: #fff;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(30,60,114,0.10);
+        }
+        .main-btn:hover {
+            background: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+ 
+    <nav>
+        <div class="logo">Pretax</div>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>Consultoria</h3>
+            <p>Especialistas prontos para ajudar sua empresa a crescer.</p>
+        </div>
+        <div class="card">
+            <h3>Planejamento</h3>
+            <p>Estratégias inteligentes para o sucesso do seu negócio.</p>
+        </div>
+        <div class="card">
+            <h3>Gestão Fiscal</h3>
+            <p>Controle total e segurança nas obrigações fiscais.</p>
+        </div>
+    </div>
+
+    <main>
+        <button class="main-btn" onclick="window.location.href='/services'">
+            Conheça nossos serviços
+        </button>
+    </main>
+</body>
+</html>
